@@ -1,10 +1,10 @@
-package pl.piomin.services.organization.repository;
+package com.rubensleme.services.organization.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import pl.piomin.services.organization.model.Organization;
+import com.rubensleme.services.organization.model.Organization;
 
 public class OrganizationRepository {
 

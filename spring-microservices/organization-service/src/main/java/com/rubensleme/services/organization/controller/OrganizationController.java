@@ -1,7 +1,8 @@
-package pl.piomin.services.organization.controller;
+package com.rubensleme.services.organization.controller;
 
 import java.util.List;
 
+import com.rubensleme.services.organization.repository.OrganizationRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import pl.piomin.services.organization.client.DepartmentClient;
-import pl.piomin.services.organization.client.EmployeeClient;
-import pl.piomin.services.organization.model.Organization;
-import pl.piomin.services.organization.repository.OrganizationRepository;
+import com.rubensleme.services.organization.client.DepartmentClient;
+import com.rubensleme.services.organization.client.EmployeeClient;
+import com.rubensleme.services.organization.model.Organization;
 
 @RestController
 public class OrganizationController {
@@ -22,7 +22,7 @@ public class OrganizationController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrganizationController.class);
 	
 	@Autowired
-	OrganizationRepository repository;
+    OrganizationRepository repository;
 	@Autowired
 	DepartmentClient departmentClient;
 	@Autowired
