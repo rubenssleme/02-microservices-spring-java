@@ -1,4 +1,4 @@
-# Discovery Service
+# Module Discovery Service
 Usando Java 1.8 e Spring Boot.
 ### Como executar a aplicação
 Certifique-se de ter instalado:
