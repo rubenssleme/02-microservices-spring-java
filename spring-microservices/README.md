@@ -1,10 +1,10 @@
-# Spring-boot-api
-API usando Java 11 e Spring Boot.
+# Spring-MicroServices
+Usando Java 1.8 e Spring Boot.
 ### Como executar a aplicação
 Certifique-se de ter instalado:
 ```
 GIT
-JAVA 11 ou superior
+JAVA 1.8 ou superior
 MAVEN 
 ```
 
