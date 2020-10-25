@@ -10,6 +10,7 @@
         <module name="department-service" />
         <module name="discovery-service" />
         <module name="exemplo-spring-microservices" />
+        <module name="employee-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
+      <module name="employee-service" options="-parameters" />
       <module name="exemplo-spring-microservices" options="-parameters" />
     </option>
   </component>
