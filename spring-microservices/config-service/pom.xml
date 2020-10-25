@@ -27,8 +27,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
