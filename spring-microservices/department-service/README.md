@@ -1,10 +1,10 @@
-# Config Service
+# Department Service
 Usando Java 1.8 e Spring Boot.
 ### Como executar a aplicação
 Certifique-se de ter instalado:
 ```
 GIT
-JAVA 1.8  ou superior
+JAVA 1.8 ou superior
 MAVEN 
 ```
 
