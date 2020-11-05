@@ -28,11 +28,20 @@ import com.rubensleme.hrworker.repositories.WorkerRepository;
 public class WorkerResource {
 	
 	private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
+	@Value("${test.config}")
+	private String testConfig;
+	
 	@Autowired
 	private Environment env;
 	
 	@Autowired
 	private WorkerRepository repository;
+	
+	@GetMapping(value = "/{config}")
+	public ResponseEntity<Void> getConfig() {
+		logger.info("CONFIG = " + testConfig);
+		return ResponseEntity.noContent().build();
+	}	
 	
 	@GetMapping
 	public ResponseEntity<List<Worker>> findAll() {
@@ -40,11 +49,11 @@ public class WorkerResource {
 		return ResponseEntity.ok(list);
 	}	
 	
-	@GetMapping(value = "/{id}")
-	public ResponseEntity<Worker> findById(@PathVariable Long id) {
-		logger.info("PORT = "+ env.getProperty("local.server.port"));
-		Worker obj = repository.findById(id).get();
-		return ResponseEntity.ok(obj);
-	}	
+//	@GetMapping(value = "/{id}")
+//	public ResponseEntity<Worker> findById(@PathVariable Long id) {
+//		logger.info("PORT = "+ env.getProperty("local.server.port"));
+//		Worker obj = repository.findById(id).get();
+//		return ResponseEntity.ok(obj);
+//	}	
 		
 }
